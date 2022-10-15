@@ -18,14 +18,14 @@ struct BikeStationListView: View {
             LazyVStack{
                ForEach(bikeStationsVM.bikeStations){ station in
                 NavigationLink(destination: BikeStationDetailView(bikeStation: station), label: {
-                    VStack (spacing:15)
+                    VStack ()
                     {
-                        BikeStationListItemView(bikeStation: station).frame(width: 400, height: 150, alignment: .center)
+                        BikeStationListItemView(bikeStation: station)
                     }
                 })
               }
             }
-          }
+          }.navigationTitle(Text("Bike Stations"))
         }
     }
 }

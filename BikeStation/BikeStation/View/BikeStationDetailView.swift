@@ -28,10 +28,9 @@ struct BikeStationDetailView: View {
                 }
             }
         }
-        HStack(spacing:20){
-            BikeStationListItemView(bikeStation: bikeStationsDetailVM.bikeStation)
+        HStack(){
+            BikeStationDetailInfoView(bikeStation: bikeStationsDetailVM.bikeStation)
         }
-        Spacer(minLength: 20)
     }
     
     

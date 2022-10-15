@@ -20,7 +20,8 @@ class BikeStationListItemViewModel: ObservableObject {
     // genarate a destance for location
     // this method just moking , needs to develop a logic using the user location
     func getDistance() -> String{
-        return "300m"
+        let rand = Int.random(in: 100..<999)// TBD
+        return "\(rand)m"
     }
     
 }
